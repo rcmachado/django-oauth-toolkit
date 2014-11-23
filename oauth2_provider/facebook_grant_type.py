@@ -4,9 +4,9 @@ from __future__ import unicode_literals, absolute_import
 import json
 import logging
 
-from oauthlib.grant_types.base import GrantTypeBase
-from oauthlib import errors
-from oauthlib.request_validator import RequestValidator
+from oauthlib.oauth2.rfc6749.grant_types.base import GrantTypeBase
+from oauthlib.oauth2.rfc6749 import errors
+from oauthlib.oauth2.rfc6749.request_validator import RequestValidator
 
 log = logging.getLogger(__name__)
 

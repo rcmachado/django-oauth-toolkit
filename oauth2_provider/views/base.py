@@ -4,14 +4,13 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.views.generic import View, FormView
 from django.utils import timezone
 
-from oauthlib.oauth2 import Server
-
 from braces.views import LoginRequiredMixin, CsrfExemptMixin
 
 from ..settings import oauth2_settings
 from ..exceptions import OAuthToolkitError
 from ..forms import AllowForm
 from ..models import get_application_model
+from ..endpoints import Server
 from .mixins import OAuthLibMixin
 
 Application = get_application_model()

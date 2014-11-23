@@ -8,19 +8,21 @@ for consuming and providing OAuth 2.0 RFC6749.
 """
 from __future__ import absolute_import, unicode_literals
 
-from oauthlib.tokens import BearerToken
-from oauthlib.grant_types import AuthorizationCodeGrant
-from oauthlib.grant_types import ImplicitGrant
-from oauthlib.grant_types import ResourceOwnerPasswordCredentialsGrant
-from oauthlib.grant_types import ClientCredentialsGrant
-from oauthlib.grant_types import RefreshTokenGrant
+from oauthlib.oauth2 import AuthorizationCodeGrant
+from oauthlib.oauth2 import ImplicitGrant
+from oauthlib.oauth2 import ResourceOwnerPasswordCredentialsGrant
+from oauthlib.oauth2 import ClientCredentialsGrant
+from oauthlib.oauth2 import RefreshTokenGrant
 
-from oauthlib.authorization import AuthorizationEndpoint
-from oauthlib.token import TokenEndpoint
-from oauthlib.resource import ResourceEndpoint
-from oauthlib.revocation import RevocationEndpoint
+from oauthlib.oauth2 import BearerToken
+
+from oauthlib.oauth2 import AuthorizationEndpoint
+from oauthlib.oauth2 import TokenEndpoint
+from oauthlib.oauth2 import ResourceEndpoint
+from oauthlib.oauth2 import RevocationEndpoint
 
 from .facebook_grant_type import FacebookGrant
+
 
 class Server(AuthorizationEndpoint, TokenEndpoint, ResourceEndpoint,
              RevocationEndpoint):

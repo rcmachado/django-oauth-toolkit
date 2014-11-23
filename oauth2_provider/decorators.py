@@ -1,9 +1,9 @@
 from functools import wraps
 
-from oauthlib.oauth2 import Server
 from django.http import HttpResponseForbidden
 from django.core.exceptions import ImproperlyConfigured
 
+from .endpoints import Server
 from .oauth2_validators import OAuth2Validator
 from .oauth2_backends import OAuthLibCore
 from .settings import oauth2_settings
@@ -19,7 +19,7 @@ def protected_resource(scopes=None, validator_cls=OAuth2Validator, server_cls=Se
             # An access token is required to get here...
             # ...
             pass
-    
+
     """
     _scopes = scopes or []
 

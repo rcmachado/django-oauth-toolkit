@@ -1,7 +1,6 @@
 from django.views.generic import View
 
-from oauthlib.oauth2 import Server
-
+from ..endpoints import Server
 from ..settings import oauth2_settings
 from .mixins import ProtectedResourceMixin, ScopedResourceMixin, ReadWriteScopedResourceMixin
 

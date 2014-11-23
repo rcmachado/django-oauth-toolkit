@@ -19,7 +19,7 @@ log = logging.getLogger('oauth2_provider')
 GRANT_TYPE_MAPPING = {
     'authorization_code': (Application.GRANT_AUTHORIZATION_CODE,),
     'password': (Application.GRANT_PASSWORD,),
-    'facebook': (Application.FACEBOOK_PASSWORD,),
+    'facebook': (Application.GRANT_FACEBOOK,),
     'client_credentials': (Application.GRANT_CLIENT_CREDENTIALS,),
     'refresh_token': (Application.GRANT_AUTHORIZATION_CODE, Application.GRANT_PASSWORD,
                       Application.GRANT_CLIENT_CREDENTIALS)
