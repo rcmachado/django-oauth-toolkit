@@ -141,7 +141,7 @@ def get_oauthlib_core():
     Utility function that take a request and returns an instance of
     `oauth2_provider.backends.OAuthLibCore`
     """
-    from oauthlib.oauth2 import Server
+    from .endpoints import Server
 
     server = Server(oauth2_settings.OAUTH2_VALIDATOR_CLASS())
     return OAuthLibCore(server)

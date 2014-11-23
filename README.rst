@@ -1,3 +1,6 @@
+**Note: this fork implements a custom Facebook grant that accepts a
+Facebook access token.**
+
 Django OAuth Toolkit
 ====================
 

@@ -50,11 +50,13 @@ class AbstractApplication(models.Model):
     GRANT_AUTHORIZATION_CODE = 'authorization-code'
     GRANT_IMPLICIT = 'implicit'
     GRANT_PASSWORD = 'password'
+    GRANT_FACEBOOK = 'facebook'
     GRANT_CLIENT_CREDENTIALS = 'client-credentials'
     GRANT_TYPES = (
         (GRANT_AUTHORIZATION_CODE, _('Authorization code')),
         (GRANT_IMPLICIT, _('Implicit')),
         (GRANT_PASSWORD, _('Resource owner password-based')),
+        (GRANT_FACEBOOK, _('Facebook')),
         (GRANT_CLIENT_CREDENTIALS, _('Client credentials')),
     )
 
