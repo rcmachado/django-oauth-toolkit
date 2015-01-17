@@ -7,7 +7,7 @@ class RawIDAdmin(admin.ModelAdmin):
 
 Application = get_application_model()
 
-admin.site.register(Application, RawIDAdmin)
+# admin.site.register(Application, RawIDAdmin)
 admin.site.register(Grant, RawIDAdmin)
 admin.site.register(AccessToken, RawIDAdmin)
 admin.site.register(RefreshToken, RawIDAdmin)
